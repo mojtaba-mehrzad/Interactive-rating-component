@@ -139,7 +139,6 @@ main{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    cursor: pointer;
     visibility:hidden;
 }
 
@@ -147,6 +146,8 @@ main{
     box-shadow: var(--White) 0px 0px 36px 0px;
     background-color: var(--White);
     transition: all 0s !important;
+    user-select: none;
+
 }
 
  .form-input[type="radio"]:checked + label{
@@ -160,7 +161,6 @@ main{
     align-items: center;
     font-weight: 700;
     color: var(--Light-Grey);
-    cursor: pointer;
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -179,10 +179,9 @@ main{
     font-weight: 700;
     border-radius: 1.75rem;
     letter-spacing: 0.0625rem;
-    cursor: pointer;
     transition: all 0.3s;
     border: none;
-    user-select: none;
+    user-select:none;
 }
 
 .form-submit-button:active{
@@ -285,6 +284,10 @@ footer{
     .input-container{
         width: 3.25rem;
         height: 3.25rem;
+    }
+
+    .form-input,.form-label,.form-submit-button{
+        cursor: pointer;
     }
 
     .form-input:active + label{
